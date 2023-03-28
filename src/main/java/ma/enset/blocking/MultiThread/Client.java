@@ -11,7 +11,7 @@ public class Client {
     }
     public Client() {
         try {
-            Socket socket = new Socket("localhost",8080);
+            Socket socket = new Socket("localhost",1111);
 
             InputStream is = socket.getInputStream();
             InputStreamReader isr = new InputStreamReader(is);

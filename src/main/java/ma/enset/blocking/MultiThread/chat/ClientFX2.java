@@ -1,4 +1,4 @@
-package ma.enset.blocking.MultiThread;
+package ma.enset.blocking.MultiThread.chat;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -8,10 +8,8 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
+import javafx.scene.image.Image;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.text.Text;
@@ -30,8 +28,9 @@ public class ClientFX2 extends Application {
     public void start(Stage stage) throws Exception {
         stage.setTitle("HM Messanger");
         BorderPane borderPane = new BorderPane();
-        borderPane.setStyle("-fx-background-color: white;"+"-fx-font-weight: bold;");
-        ////
+        
+        borderPane.setStyle("-fx-font-weight: bold;");
+        ////"-fx-background-color: white;"+
         Label title = new Label("HM Messanger");
         title.setAlignment(Pos.CENTER);
 

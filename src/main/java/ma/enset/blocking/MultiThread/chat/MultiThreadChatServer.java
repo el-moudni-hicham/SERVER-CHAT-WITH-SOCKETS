@@ -1,4 +1,4 @@
-package ma.enset.blocking.MultiThread;
+package ma.enset.blocking.MultiThread.chat;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -16,9 +16,9 @@ public class MultiThreadChatServer extends Thread{
 
     @Override
     public void run() {
-        System.out.println("Server start on port 1111");
+        System.out.println("Server start on port 2222");
         try {
-            ServerSocket ss = new ServerSocket(1111);
+            ServerSocket ss = new ServerSocket(2222);
             while (true){
                 Socket socket = ss.accept();
                 ++ clientCounter;
@@ -53,7 +53,7 @@ public class MultiThreadChatServer extends Thread{
                 pw.println(" welcome, you are user number "+ clientId);
                 String request;
                 while ((request = br.readLine()) != null){
-                    System.out.println("new request IP adress : "+ ip+ "Request : "+ request);
+                    //System.out.println("new request IP adress : "+ ip+ "Request : "+ request);
                     List<Integer> clientsTo = new ArrayList<>();
                     String message;
                     if(request.contains(">")) {

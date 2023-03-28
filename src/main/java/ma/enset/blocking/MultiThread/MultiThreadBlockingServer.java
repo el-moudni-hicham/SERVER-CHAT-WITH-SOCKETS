@@ -12,9 +12,9 @@ public class MultiThreadBlockingServer extends Thread{
 
     @Override
     public void run() {
-        System.out.println("Server start on port 8080");
+        System.out.println("Server start on port 2222");
         try {
-            ServerSocket ss = new ServerSocket(8080);
+            ServerSocket ss = new ServerSocket(2222);
             while (true){
                 Socket socket = ss.accept();
                 ++ clientCounter;
@@ -47,7 +47,7 @@ public class MultiThreadBlockingServer extends Thread{
                 pw.println(" welcome, you are client "+ clientId);
                 String request;
                 while (!(request = br.readLine()).equals(null)){
-                    System.out.println("new request IP adress : "+ ip+ "Request : "+ request);
+                    //System.out.println("new request IP adress : "+ ip+ "Request : "+ request);
                     String response = "size "+ request.length();
                     pw.println(response);
                 }

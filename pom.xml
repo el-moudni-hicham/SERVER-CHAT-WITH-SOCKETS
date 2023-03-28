@@ -31,7 +31,7 @@
             <artifactId>javafx-maven-plugin</artifactId>
             <version>${javafx.maven.plugin.version}</version>
             <configuration>
-                <mainClass>ma.enset.blocking.MultiThread.ClientFX2</mainClass>
+                <mainClass>ma.enset.blocking.MultiThread.chat.ClientFX2</mainClass>
             </configuration>
         </plugin>
     </plugins>
